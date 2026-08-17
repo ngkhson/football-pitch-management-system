@@ -9,7 +9,7 @@ function App() {
   const testConnection = async () => {
     setLoading(true)
     try {
-      const response = await axios.get('http://localhost:8080/api/test')
+      const response = await axios.get(`${import.meta.env.VITE_API_URL}/test`)
       setBackendMessage(response.data)
     } catch (error) {
       setBackendMessage('Lỗi kết nối tới Backend! Hãy chắc chắn Spring Boot đang chạy ở cổng 8080.')
