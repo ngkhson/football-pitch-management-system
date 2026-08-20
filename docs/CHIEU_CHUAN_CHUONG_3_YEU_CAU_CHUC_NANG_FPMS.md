@@ -4,7 +4,7 @@
 
 Hệ thống Quản lý và Đặt sân bóng đá trực tuyến (Football Pitch Management System - FPMS) gồm có 4 tác nhân chính:
 - **Khách hàng (Customer):** Người dùng có nhu cầu tìm kiếm sân, đặt lịch đá bóng, thanh toán tiền cọc, theo dõi lịch sử đặt và quản lý tài khoản cá nhân.
-- **Nhân viên (Staff):** Người trực tiếp làm việc tại cơ sở sân bóng, phụ trách duyệt đơn, check-in nhận sân, quản lý ca đá thực tế, lập hóa đơn dịch vụ và thanh toán tại quầy.
+- **Nhân viên (Staff):** Người trực tiếp làm việc tại cơ sở sân bóng, phụ trách duyệt đơn, check-in nhận sân, quản lý ca đá thực tế, lập hóa đơn và thanh toán tại quầy.
 - **Chủ sân (Admin / Pitch Owner):** Người quản trị toàn bộ hoạt động của hệ thống, quản lý danh mục sân, cấu hình khung giờ, thiết lập bảng giá thuê sân và xem báo cáo thống kê doanh thu.
 - **Hệ thống thanh toán (Payment Gateway):** Cổng thanh toán trực tuyến bên thứ ba (VNPAY / MoMo) hỗ trợ xử lý giao dịch thanh toán tiền cọc an toàn.
 
@@ -21,16 +21,17 @@ Hệ thống Quản lý và Đặt sân bóng đá trực tuyến (Football Pitc
 | 5 | **Đặt lại mật khẩu** | Yêu cầu cấp lại mật khẩu qua mã xác thực OTP gửi về Email | Khách hàng |
 | 6 | **Tra cứu thông tin sân** | Tìm kiếm sân bóng còn trống theo ngày, khung giờ và loại sân | Khách hàng |
 | 7 | **Đặt sân trực tuyến** | Chọn sân, ca đá và nhập thông tin người đặt để tạo đơn giữ chỗ | Khách hàng |
-| 8 | **Thanh toán** | Thực hiện thanh toán tiền đặt cọc (30%) hoặc thanh toán đơn đặt sân qua cổng VNPAY | Khách hàng, Hệ thống thanh toán |
-| 9 | **Quản lý đơn đặt sân cá nhân** | Xem lịch sử đơn đặt, lấy mã QR check-in hoặc yêu cầu hủy đơn | Khách hàng |
-| 10 | **Quản lý đơn đặt sân** | Tiếp nhận, xác nhận đơn online hoặc tạo đơn trực tiếp cho khách tại quầy | Nhân viên, Chủ sân |
-| 11 | **Quản lý ca đá** | Theo dõi bảng timeline lịch sân thời gian thực và quét mã QR nhận sân | Nhân viên |
-| 12 | **Quản lý hoá đơn** | Tính tiền giờ sân + dịch vụ phát sinh (nước, bóng, áo) và thanh toán tại quầy | Nhân viên |
-| 13 | **Quản lý khách hàng** | Tra cứu thông tin, lịch sử đá bóng và phân loại khách hàng (VIP/Blacklist) | Nhân viên, Chủ sân |
-| 14 | **Quản lý danh mục sân bóng** | Thêm mới, chỉnh sửa thông tin và cập nhật trạng thái bảo trì sân | Chủ sân |
-| 15 | **Quản lý khung giờ** | Cấu hình các ca đá trong ngày và chỉ định khung giờ cao điểm (giờ vàng) | Chủ sân |
-| 16 | **Quản lý bảng giá sân** | Thiết lập giá thuê sân theo loại sân, ngày thường/cuối tuần, khung giờ | Chủ sân |
-| 17 | **Xem báo cáo thống kê** | Xem biểu đồ doanh thu, tần suất sử dụng sân và xuất file Excel | Chủ sân |
+| 8 | **Thanh toán tiền cọc** | Thực hiện thanh toán tiền đặt cọc (VD: 30%) ngay khi đặt sân qua hệ thống | Khách hàng, Hệ thống thanh toán |
+| 9 | **Thanh toán** | Thanh toán phần tiền còn lại sau khi kết thúc ca đá | Khách hàng, Hệ thống thanh toán |
+| 10 | **Quản lý đơn đặt sân cá nhân** | Xem lịch sử đơn đặt, lấy mã QR check-in hoặc yêu cầu hủy đơn | Khách hàng |
+| 11 | **Quản lý đơn đặt sân** | Tiếp nhận, xác nhận đơn online hoặc tạo đơn trực tiếp cho khách tại quầy | Nhân viên, Chủ sân |
+| 12 | **Quản lý ca đá** | Theo dõi bảng timeline lịch sân thời gian thực và quét mã QR nhận sân | Nhân viên |
+| 13 | **Quản lý hoá đơn** | Tính tiền giờ sân và thanh toán tại quầy | Nhân viên |
+| 14 | **Quản lý khách hàng** | Tra cứu thông tin, lịch sử đá bóng và phân loại khách hàng (VIP/Blacklist) | Nhân viên, Chủ sân |
+| 15 | **Quản lý danh mục sân bóng** | Thêm mới, chỉnh sửa thông tin và cập nhật trạng thái bảo trì sân | Chủ sân |
+| 16 | **Quản lý khung giờ** | Cấu hình các ca đá trong ngày và chỉ định khung giờ cao điểm (giờ vàng) | Chủ sân |
+| 17 | **Quản lý bảng giá sân** | Thiết lập giá thuê sân theo loại sân, ngày thường/cuối tuần, khung giờ | Chủ sân |
+| 18 | **Xem báo cáo thống kê** | Xem biểu đồ doanh thu, tần suất sử dụng sân và xuất file Excel | Chủ sân |
 
 *Table 3.1 Xác định các ca sử dụng*
 
@@ -57,6 +58,7 @@ graph LR
         subgraph Sub_Customer["Phân hệ Khách hàng (Đặt sân)"]
             UC_Search["Tra cứu thông tin sân"]
             UC_Book["Đặt sân trực tuyến"]
+            UC_Deposit["Thanh toán tiền cọc"]
             UC_Payment["Thanh toán"]
             UC_MyBooking["Quản lý đơn đặt sân cá nhân"]
         end
@@ -86,7 +88,8 @@ graph LR
     Customer --> UC_Book
     Customer --> UC_MyBooking
     Customer --> UC_Payment
-    UC_Book -.->|<<include>>| UC_Payment
+    UC_Book -.->|<<include>>| UC_Deposit
+    UC_Deposit --> PaymentGateway
     UC_Payment --> PaymentGateway
 
     %% Staff
@@ -509,7 +512,7 @@ flowchart TD
     InputCustomerData --> SubmitBookingOrder[Nhấn 'Xác nhận đơn đặt']
     SubmitBookingOrder --> LockSlotTime[Hệ thống khóa tạm thời slot sân trong 10 phút]
     LockSlotTime --> CreatePendingOrder[(Tạo đơn đặt PENDING_PAYMENT)]
-    CreatePendingOrder --> ForwardPayment[Chuyển tiếp sang Use Case: Thanh toán] --> End([Kết thúc])
+    CreatePendingOrder --> ForwardPayment[Chuyển tiếp sang Use Case: Thanh toán tiền cọc] --> End([Kết thúc])
 ```
 *Hình 3.14 Biểu đồ hoạt động đặt sân trực tuyến*
 
@@ -527,16 +530,16 @@ flowchart TD
 | 1. | Khách hàng | Chọn sân bóng, ngày đá, ca đá và nhấn "Đặt sân ngay" |
 | 2. | Hệ thống | Hiển thị màn hình xác nhận thông tin đơn đặt và số tiền cọc (30%) |
 | 3. | Khách hàng | Điền/kiểm tra thông tin người đặt (Họ tên, SĐT) và ghi chú |
-| 4. | Khách hàng | Nhấn "Xác nhận đặt sân & Tiến hành thanh toán" |
+| 4. | Khách hàng | Nhấn "Xác nhận đặt sân & Tiến hành thanh toán cọc" |
 | 5. | Hệ thống | Khóa tạm thời khung giờ của sân trong 10 phút để tránh bị đặt trùng |
-| 6. | Hệ thống | Tạo bản ghi đơn đặt ở trạng thái `PENDING_PAYMENT` và chuyển sang giao diện thanh toán |
+| 6. | Hệ thống | Tạo bản ghi đơn đặt ở trạng thái `PENDING_PAYMENT` và chuyển sang giao diện thanh toán cọc |
 
 **Luồng sự kiện thay thế:**
 | STT | Thực hiện bởi | Hành động |
 | :---: | :--- | :--- |
 | 5a. | Hệ thống | Báo lỗi: Khung giờ này vừa có người khác đặt trước. Vui lòng chọn sân hoặc giờ khác. |
 
-**Hậu điều kiện:** Đơn đặt sân được khởi tạo thành công và chuyển sang bước thanh toán.  
+**Hậu điều kiện:** Đơn đặt sân được khởi tạo thành công và chuyển sang bước thanh toán tiền cọc.  
 *Table 3.8 Đặc tả use case đặt sân trực tuyến*
 
 ```text
@@ -560,7 +563,7 @@ flowchart TD
 
 ---
 
-### 3.4.8. Thanh toán
+### 3.4.8. Thanh toán tiền cọc
 
 ```mermaid
 flowchart TD
@@ -574,12 +577,12 @@ flowchart TD
     IPNCallback -- Thành công (vnp_ResponseCode=00) --> PaySuccess[(Cập nhật đơn: CONFIRMED & Tạo mã QR vé)]
     PaySuccess --> ShowTicketUI[Hiển thị màn hình Đặt sân thành công] --> EndSuccess([Kết thúc])
 ```
-*Hình 3.16 Biểu đồ hoạt động thanh toán*
+*Hình 3.16 Biểu đồ hoạt động thanh toán tiền cọc*
 
 | Thuộc tính | Chi tiết |
 | :--- | :--- |
 | **Mã Use case** | `UC008` |
-| **Tên Use case** | **Thanh toán** |
+| **Tên Use case** | **Thanh toán tiền cọc** |
 | **Tác nhân** | Khách hàng, Hệ thống thanh toán (VNPAY / MoMo) |
 | **Sự kiện kích hoạt** | Nhấn nút "Thanh toán cọc ngay" |
 | **Tiền điều kiện** | Đơn đặt sân đang ở trạng thái `PENDING_PAYMENT` |
@@ -601,7 +604,7 @@ flowchart TD
 | 5a. | Hệ thống thanh toán | Báo lỗi giao dịch không thành công (không đủ số dư, lỗi thẻ) -> Hệ thống thông báo lỗi và cho phép thử lại |
 
 **Hậu điều kiện:** Tiền đặt cọc được thanh toán, đơn đặt sân được chuyển sang trạng thái đã đặt cọc thành công.  
-*Table 3.9 Đặc tả use case thanh toán*
+*Table 3.9 Đặc tả use case thanh toán tiền cọc*
 
 ```text
 +-----------------------------------------------------------------------------------------+
@@ -626,11 +629,61 @@ flowchart TD
 |                        +---------------------------------------+                        |
 +-----------------------------------------------------------------------------------------+
 ```
-*Hình 3.17 UI thanh toán*
+*Hình 3.17 UI thanh toán tiền cọc*
 
 ---
 
-### 3.4.9. Quản lý đơn đặt sân cá nhân
+
+---
+
+### 3.4.9. Thanh toán (Phần còn lại)
+
+`mermaid
+flowchart TD
+    Start([Khách kết thúc ca đá]) --> CheckInvoice[Khách hoặc nhân viên xem hoá đơn cuối]
+    CheckInvoice --> ChoosePayFinal[Chọn thanh toán phần còn lại]
+    ChoosePayFinal --> RedirectPayFinal[Chuyển hướng cổng thanh toán]
+    RedirectPayFinal --> ScanQRFinal[Quét mã QR thanh toán]
+    ScanQRFinal --> IPNCallbackFinal{Kết quả thanh toán}
+    IPNCallbackFinal -- Thất bại --> PayFailFinal[Báo lỗi, yêu cầu thử lại] --> ScanQRFinal
+    IPNCallbackFinal -- Thành công --> PaySuccessFinal[(Cập nhật đơn: HOÀN THÀNH)]
+    PaySuccessFinal --> EndFinal([Kết thúc])
+`
+*Hình 3.18 Biểu đồ hoạt động thanh toán phần còn lại*
+
+| Thuộc tính | Chi tiết |
+| :--- | :--- |
+| **Mã Use case** | UC009 |
+| **Tên Use case** | **Thanh toán (Phần còn lại)** |
+| **Tác nhân** | Khách hàng, Hệ thống thanh toán |
+| **Sự kiện kích hoạt** | Nhấn nút "Thanh toán hóa đơn" sau ca đá |
+| **Tiền điều kiện** | Đơn đặt sân đang ở trạng thái CHỜ_THANH_TOÁN_NỐT |
+
+**Luồng sự kiện chính (Thành công):**
+| STT | Thực hiện bởi | Hành động |
+| :---: | :--- | :--- |
+| 1. | Khách hàng | Kiểm tra tổng hóa đơn |
+| 2. | Khách hàng | Chọn phương thức và nhấn "Thanh toán" |
+| 3. | Hệ thống | Chuyển hướng sang hệ thống thanh toán |
+| 4. | Hệ thống TT | Xử lý và trả về kết quả thành công |
+| 5. | Hệ thống | Cập nhật đơn đặt sang HOÀN_THÀNH và trạng thái thanh toán là ĐÃ_HOÀN_TẤT |
+
+**Luồng sự kiện thay thế:**
+| STT | Thực hiện bởi | Hành động |
+| :---: | :--- | :--- |
+| 2a. | Khách hàng | Chọn thanh toán tiền mặt tại quầy -> Nhân viên xác nhận thu tiền và đóng đơn. |
+
+**Hậu điều kiện:** Hóa đơn được thanh toán đầy đủ, đơn đặt sân hoàn tất.  
+*Table 3.10 Đặc tả use case thanh toán phần còn lại*
+
+`	ext
++-----------------------------------------------------------------------------------------+
+|                                 THANH TOÁN HÓA ĐƠN CUỐI                                 |
++-----------------------------------------------------------------------------------------+
+`
+*Hình 3.19 UI thanh toán phần còn lại*
+
+### 3.4.10. Quản lý đơn đặt sân cá nhân
 
 ```mermaid
 flowchart TD
@@ -643,11 +696,11 @@ flowchart TD
     CheckPolicy -- Có --> Refund100[Hủy đơn thành công & Hoàn cọc 100%] --> End
     CheckPolicy -- Không --> NoRefund[Thông báo: Hủy sát giờ không hoàn cọc] --> End
 ```
-*Hình 3.18 Biểu đồ hoạt động quản lý đơn đặt sân cá nhân*
+*Hình 3.20 Biểu đồ hoạt động quản lý đơn đặt sân cá nhân*
 
 | Thuộc tính | Chi tiết |
 | :--- | :--- |
-| **Mã Use case** | `UC009` |
+| **Mã Use case** | `UC010` |
 | **Tên Use case** | **Quản lý đơn đặt sân cá nhân** |
 | **Tác nhân** | Khách hàng |
 | **Sự kiện kích hoạt** | Chọn mục "Lịch sử đặt sân" trên menu tài khoản |
@@ -667,7 +720,7 @@ flowchart TD
 | 3a. | Khách hàng | Chọn "Yêu cầu hủy đơn" -> Hệ thống đối soát thời gian quy định và cập nhật trạng thái hủy |
 
 **Hậu điều kiện:** Khách hàng theo dõi và quản lý được các vé đặt sân cá nhân.  
-*Table 3.10 Đặc tả use case quản lý đơn đặt sân cá nhân*
+*Table 3.11 Đặc tả use case quản lý đơn đặt sân cá nhân*
 
 ```text
 +-----------------------------------------------------------------------------------------+
@@ -687,11 +740,11 @@ flowchart TD
 |  [ HỦY ĐẶT SÂN ]                                       Xuất trình mã này cho nhân viên  |
 +-----------------------------------------------------------------------------------------+
 ```
-*Hình 3.19 UI quản lý đơn đặt sân cá nhân*
+*Hình 3.21 UI quản lý đơn đặt sân cá nhân*
 
 ---
 
-### 3.4.10. Quản lý đơn đặt sân (Phân hệ Nhân viên)
+### 3.4.11. Quản lý đơn đặt sân (Phân hệ Nhân viên)
 
 ```mermaid
 flowchart TD
@@ -705,11 +758,11 @@ flowchart TD
     CancelStaffOrder --> SaveOrder
     SaveOrder --> RefreshList[Tải lại danh sách đơn] --> End([Kết thúc])
 ```
-*Hình 3.20 Biểu đồ hoạt động quản lý đơn đặt sân của nhân viên*
+*Hình 3.22 Biểu đồ hoạt động quản lý đơn đặt sân của nhân viên*
 
 | Thuộc tính | Chi tiết |
 | :--- | :--- |
-| **Mã Use case** | `UC010` |
+| **Mã Use case** | `UC011` |
 | **Tên Use case** | **Quản lý đơn đặt sân** |
 | **Tác nhân** | Nhân viên, Chủ sân |
 | **Sự kiện kích hoạt** | Truy cập menu "Quản lý đơn đặt" |
@@ -729,7 +782,7 @@ flowchart TD
 | 3a. | Nhân viên | Hủy thao tác -> Hệ thống giữ nguyên trạng thái đơn |
 
 **Hậu điều kiện:** Đơn đặt sân được cập nhật chính xác.  
-*Table 3.11 Đặc tả use case quản lý đơn đặt sân của nhân viên*
+*Table 3.12 Đặc tả use case quản lý đơn đặt sân của nhân viên*
 
 ```text
 +-----------------------------------------------------------------------------------------+
@@ -744,11 +797,11 @@ flowchart TD
 |  +----+--------------+---------------+-------------+------------+----------+----------+ |
 +-----------------------------------------------------------------------------------------+
 ```
-*Hình 3.21 UI quản lý đơn đặt sân của nhân viên*
+*Hình 3.23 UI quản lý đơn đặt sân của nhân viên*
 
 ---
 
-### 3.4.11. Quản lý ca đá
+### 3.4.12. Quản lý ca đá
 
 ```mermaid
 flowchart TD
@@ -760,11 +813,11 @@ flowchart TD
     ConfirmCheckin --> UpdateMatchStatus[(Cập nhật trạng thái: ĐANG ĐÁ)]
     UpdateMatchStatus --> TimelineGrid[Timeline đổi màu sân sang Đang đá] --> End
 ```
-*Hình 3.22 Biểu đồ hoạt động quản lý ca đá*
+*Hình 3.24 Biểu đồ hoạt động quản lý ca đá*
 
 | Thuộc tính | Chi tiết |
 | :--- | :--- |
-| **Mã Use case** | `UC011` |
+| **Mã Use case** | `UC012` |
 | **Tên Use case** | **Quản lý ca đá** |
 | **Tác nhân** | Nhân viên |
 | **Sự kiện kích hoạt** | Quét mã QR hoặc chọn ca đá trên timeline |
@@ -785,7 +838,7 @@ flowchart TD
 | 3a. | Hệ thống | Thông báo lỗi: Vé đã được sử dụng hoặc sai ngày/giờ |
 
 **Hậu điều kiện:** Khách hàng nhận sân thành công, ca đá bắt đầu.  
-*Table 3.12 Đặc tả use case quản lý ca đá*
+*Table 3.13 Đặc tả use case quản lý ca đá*
 
 ```text
 +-----------------------------------------------------------------------------------------+
@@ -801,18 +854,17 @@ flowchart TD
 |  +--------------+---------------+---------------+---------------+---------------+       |
 +-----------------------------------------------------------------------------------------+
 ```
-*Hình 3.23 UI quản lý ca đá*
+*Hình 3.25 UI quản lý ca đá*
 
 ---
 
-### 3.4.12. Quản lý hoá đơn
+### 3.4.13. Quản lý hoá đơn
 
 ```mermaid
 flowchart TD
     Start([Kết thúc ca đá]) --> SelectMatch[Chọn ca đá cần thanh toán]
     SelectMatch --> OpenInvoice[Tạo biểu mẫu hóa đơn]
-    OpenInvoice --> AddService[Thêm dịch vụ phát sinh: nước ngọt, thuê áo, bóng]
-    AddService --> CalcTotal[Hệ thống tự tính: Tiền sân - Tiền cọc + Tiền dịch vụ]
+    OpenInvoice --> CalcTotal[Hệ thống tự tính: Tiền sân - Tiền cọc]
     CalcTotal --> PayMethod{Hình thức trả tiền}
     PayMethod -- Tiền mặt --> RecvCash[Nhận tiền mặt]
     PayMethod -- Chuyển khoản --> GenVietQR[Tạo mã VietQR động để khách quét]
@@ -820,11 +872,11 @@ flowchart TD
     GenVietQR --> CompleteBill
     CompleteBill --> PrintBill[In hóa đơn giao cho khách] --> End([Kết thúc])
 ```
-*Hình 3.24 Biểu đồ hoạt động quản lý hoá đơn*
+*Hình 3.26 Biểu đồ hoạt động quản lý hoá đơn*
 
 | Thuộc tính | Chi tiết |
 | :--- | :--- |
-| **Mã Use case** | `UC012` |
+| **Mã Use case** | `UC013` |
 | **Tên Use case** | **Quản lý hoá đơn** |
 | **Tác nhân** | Nhân viên |
 | **Sự kiện kích hoạt** | Nhấn "Thanh toán" khi ca đá kết thúc |
@@ -835,14 +887,13 @@ flowchart TD
 | :---: | :--- | :--- |
 | 1. | Nhân viên | Chọn ca đá và nhấn "Thanh toán" |
 | 2. | Hệ thống | Hiển thị thông tin tiền sân và số tiền cọc đã trừ |
-| 3. | Nhân viên | Thêm các dịch vụ phát sinh (nước uống, thuê bóng, áo) |
-| 4. | Hệ thống | Tính tổng tiền cần thu |
-| 5. | Nhân viên | Chọn hình thức thanh toán (Tiền mặt / VietQR) và nhấn "Hoàn tất" |
-| 6. | Hệ thống | Lưu hóa đơn, in bill và chuyển trạng thái ca đá sang "Đã hoàn thành" |
+| 3. | Hệ thống | Tính tổng tiền cần thu |
+| 4. | Nhân viên | Chọn hình thức thanh toán (Tiền mặt / VietQR) và nhấn "Hoàn tất" |
+| 5. | Hệ thống | Lưu hóa đơn, in bill và chuyển trạng thái ca đá sang "Đã hoàn thành" |
 
 **Luồng sự kiện thay thế:** Không.  
 **Hậu điều kiện:** Hóa đơn được thanh toán và lưu trữ vào CSDL.  
-*Table 3.13 Đặc tả use case quản lý hoá đơn*
+*Table 3.14 Đặc tả use case quản lý hoá đơn*
 
 ```text
 +-----------------------------------------------------------------------------------------+
@@ -852,22 +903,19 @@ flowchart TD
 |  -------------------------------------------------------------------------------------  |
 |  1. Tiền thuê sân (90 phút):                                               350.000 đ    |
 |  2. Tiền cọc đã thanh toán trực tuyến:                                   - 105.000 đ    |
-|  3. Dịch vụ phát sinh:                                                                  |
-|     + Nước Revive (10 chai x 15.000đ):                                     150.000 đ    |
-|     + Thuê 2 bộ áo Pitch (2 x 20.000đ):                                     40.000 đ    |
 |  -------------------------------------------------------------------------------------  |
-|  TỔNG CỘNG CẦN THANH TOÁN:                                                 435.000 đ    |
+|  TỔNG CỘNG CẦN THANH TOÁN:                                                 245.000 đ    |
 |                                                                                         |
 |  Phương thức: (*) Tiền mặt   ( ) Quét mã VietQR                                         |
 |                                                                                         |
 |                            [ HỦY ]   [ 🖨️ XÁC NHẬN & IN HÓA ĐƠN ]                      |
 +-----------------------------------------------------------------------------------------+
 ```
-*Hình 3.25 UI quản lý hoá đơn*
+*Hình 3.27 UI quản lý hoá đơn*
 
 ---
 
-### 3.4.13. Quản lý khách hàng
+### 3.4.14. Quản lý khách hàng
 
 ```mermaid
 flowchart TD
@@ -877,11 +925,11 @@ flowchart TD
     ViewHistory --> TagCust[Gắn nhãn: Khách quen VIP / Khách bùng kèo Blacklist]
     TagCust --> SaveCust[(Lưu vào CSDL)] --> End([Kết thúc])
 ```
-*Hình 3.26 Biểu đồ hoạt động quản lý khách hàng*
+*Hình 3.28 Biểu đồ hoạt động quản lý khách hàng*
 
 | Thuộc tính | Chi tiết |
 | :--- | :--- |
-| **Mã Use case** | `UC013` |
+| **Mã Use case** | `UC014` |
 | **Tên Use case** | **Quản lý khách hàng** |
 | **Tác nhân** | Nhân viên, Chủ sân |
 | **Sự kiện kích hoạt** | Nhấp vào mục "Khách hàng" trên thanh menu |
@@ -902,7 +950,7 @@ flowchart TD
 | 3a. | Hệ thống | Thông báo không tìm thấy khách hàng |
 
 **Hậu điều kiện:** Cập nhật thông tin và lịch sử khách hàng.  
-*Table 3.14 Đặc tả use case quản lý khách hàng*
+*Table 3.15 Đặc tả use case quản lý khách hàng*
 
 ```text
 +-----------------------------------------------------------------------------------------+
@@ -916,11 +964,11 @@ flowchart TD
 |  +----+------------------+-------------+-------------+---------------+----------------+ |
 +-----------------------------------------------------------------------------------------+
 ```
-*Hình 3.27 UI quản lý khách hàng*
+*Hình 3.29 UI quản lý khách hàng*
 
 ---
 
-### 3.4.14. Quản lý danh mục sân bóng
+### 3.4.15. Quản lý danh mục sân bóng
 
 ```mermaid
 flowchart TD
@@ -934,11 +982,11 @@ flowchart TD
     ToggleMaint --> SavePitch
     SavePitch --> RefreshPitchUI[Cập nhật bảng danh mục] --> End([Kết thúc])
 ```
-*Hình 3.28 Biểu đồ hoạt động quản lý danh mục sân bóng*
+*Hình 3.30 Biểu đồ hoạt động quản lý danh mục sân bóng*
 
 | Thuộc tính | Chi tiết |
 | :--- | :--- |
-| **Mã Use case** | `UC014` |
+| **Mã Use case** | `UC015` |
 | **Tên Use case** | **Quản lý danh mục sân bóng** |
 | **Tác nhân** | Chủ sân (Admin) |
 | **Sự kiện kích hoạt** | Nhấp vào mục "Sân bóng" trong trang Quản trị |
@@ -960,7 +1008,7 @@ flowchart TD
 | 5a. | Hệ thống | Báo lỗi: Tên sân đã tồn tại trong cơ sở |
 
 **Hậu điều kiện:** Danh mục sân bóng được cập nhật.  
-*Table 3.15 Đặc tả use case quản lý danh mục sân bóng*
+*Table 3.16 Đặc tả use case quản lý danh mục sân bóng*
 
 ```text
 +-----------------------------------------------------------------------------------------+
@@ -974,11 +1022,11 @@ flowchart TD
 |  +----+--------------+----------+-----------+----------------+------------+-----------+ |
 +-----------------------------------------------------------------------------------------+
 ```
-*Hình 3.29 UI quản lý danh mục sân bóng*
+*Hình 3.31 UI quản lý danh mục sân bóng*
 
 ---
 
-### 3.4.15. Quản lý khung giờ
+### 3.4.16. Quản lý khung giờ
 
 ```mermaid
 flowchart TD
@@ -990,11 +1038,11 @@ flowchart TD
     CheckOverlap -- Không --> SaveSlot[(Lưu vào CSDL)]
     SaveSlot --> ShowSlotSuccess[Thông báo lưu khung giờ thành công] --> End([Kết thúc])
 ```
-*Hình 3.30 Biểu đồ hoạt động quản lý khung giờ*
+*Hình 3.32 Biểu đồ hoạt động quản lý khung giờ*
 
 | Thuộc tính | Chi tiết |
 | :--- | :--- |
-| **Mã Use case** | `UC015` |
+| **Mã Use case** | `UC016` |
 | **Tên Use case** | **Quản lý khung giờ** |
 | **Tác nhân** | Chủ sân (Admin) |
 | **Sự kiện kích hoạt** | Nhấp vào mục "Khung giờ" trên menu quản trị |
@@ -1016,7 +1064,7 @@ flowchart TD
 | 5a. | Hệ thống | Báo lỗi: Khung giờ bị trùng hoặc chồng lấn với ca đá khác |
 
 **Hậu điều kiện:** Khung giờ ca đá được cấu hình thành công.  
-*Table 3.16 Đặc tả use case quản lý khung giờ*
+*Table 3.17 Đặc tả use case quản lý khung giờ*
 
 ```text
 +-----------------------------------------------------------------------------------------+
@@ -1030,11 +1078,11 @@ flowchart TD
 |  +----+------------+-----------------+---------------+------------------+-------------+ |
 +-----------------------------------------------------------------------------------------+
 ```
-*Hình 3.31 UI quản lý khung giờ*
+*Hình 3.33 UI quản lý khung giờ*
 
 ---
 
-### 3.4.16. Quản lý bảng giá sân
+### 3.4.17. Quản lý bảng giá sân
 
 ```mermaid
 flowchart TD
@@ -1044,11 +1092,11 @@ flowchart TD
     SetDeposit --> SavePriceDB[(Lưu cấu hình vào CSDL)]
     SavePriceDB --> ShowPriceToast[Thông báo cập nhật giá thành công] --> End([Kết thúc])
 ```
-*Hình 3.32 Biểu đồ hoạt động quản lý bảng giá sân*
+*Hình 3.34 Biểu đồ hoạt động quản lý bảng giá sân*
 
 | Thuộc tính | Chi tiết |
 | :--- | :--- |
-| **Mã Use case** | `UC016` |
+| **Mã Use case** | `UC017` |
 | **Tên Use case** | **Quản lý bảng giá sân** |
 | **Tác nhân** | Chủ sân (Admin) |
 | **Sự kiện kích hoạt** | Nhấp vào mục "Bảng giá sân" trên menu quản trị |
@@ -1065,7 +1113,7 @@ flowchart TD
 
 **Luồng sự kiện thay thế:** Không.  
 **Hậu điều kiện:** Bảng giá mới được áp dụng trên toàn hệ thống.  
-*Table 3.17 Đặc tả use case quản lý bảng giá sân*
+*Table 3.18 Đặc tả use case quản lý bảng giá sân*
 
 ```text
 +-----------------------------------------------------------------------------------------+
@@ -1082,11 +1130,11 @@ flowchart TD
 |                                                     [ HỦY ]   [ LƯU THAY ĐỔI BẢNG GIÁ ] |
 +-----------------------------------------------------------------------------------------+
 ```
-*Hình 3.33 UI quản lý bảng giá sân*
+*Hình 3.35 UI quản lý bảng giá sân*
 
 ---
 
-### 3.4.17. Xem báo cáo thống kê
+### 3.4.18. Xem báo cáo thống kê
 
 ```mermaid
 flowchart TD
@@ -1099,11 +1147,11 @@ flowchart TD
     ExportExcel -- Có --> GenExcelFile[Tạo file .xlsx chi tiết và tải về] --> End([Kết thúc])
     ExportExcel -- Không --> End
 ```
-*Hình 3.34 Biểu đồ hoạt động xem báo cáo thống kê*
+*Hình 3.36 Biểu đồ hoạt động xem báo cáo thống kê*
 
 | Thuộc tính | Chi tiết |
 | :--- | :--- |
-| **Mã Use case** | `UC017` |
+| **Mã Use case** | `UC018` |
 | **Tên Use case** | **Xem báo cáo thống kê** |
 | **Tác nhân** | Chủ sân (Admin) |
 | **Sự kiện kích hoạt** | Nhấp vào mục "Báo cáo thống kê" trên menu quản trị |
@@ -1119,7 +1167,7 @@ flowchart TD
 
 **Luồng sự kiện thay thế:** Không.  
 **Hậu điều kiện:** Báo cáo doanh thu và hiệu suất sân được hiển thị chi tiết.  
-*Table 3.18 Đặc tả use case xem báo cáo thống kê*
+*Table 3.19 Đặc tả use case xem báo cáo thống kê*
 
 ```text
 +-----------------------------------------------------------------------------------------+
@@ -1138,7 +1186,7 @@ flowchart TD
 |  +--------------------> (Ngày trong tháng)       +-------------------------+            |
 +-----------------------------------------------------------------------------------------+
 ```
-*Hình 3.35 UI xem báo cáo thống kê*
+*Hình 3.37 UI xem báo cáo thống kê*
 
 ---
 
